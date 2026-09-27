@@ -1,0 +1,52 @@
+# Complexity Analysis
+
+## 1. Hashing Search
+
+### Average Case
+O(1) expected
+
+Hashing provides direct access to the required location using the hash function.
+
+### Worst Case
+O(n)
+
+In the worst case, many keys may have collisions and linear probing may require checking several positions.
+
+---
+
+## 2. Linear Search
+
+### Best Case
+O(1)
+
+The element is found at the first position.
+
+### Average Case
+O(n)
+
+On average, approximately half of the elements may need to be checked.
+
+### Worst Case
+O(n)
+
+The entire list may need to be searched.
+
+---
+
+## 3. Space Complexity
+
+### Hashing
+O(m)
+
+where m is the hash table size.
+
+### Linear Search
+O(1)
+
+Only a small amount of additional memory is required.
+
+---
+
+## 4. Conclusion
+
+Hashing generally requires fewer comparisons than linear search for the given song IDs. In this experiment, the average number of comparisons for hashing is 2.50, while linear search requires 4.50 comparisons.

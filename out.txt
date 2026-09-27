@@ -1,0 +1,198 @@
+========================================
+ HASHING USING DIVISION METHOD
+========================================
+Hash Table Size = 10
+Hash Function: h(k) = k % 10
+
+
+========== INSERTION ==========
+
+Inserting 105
+Initial hash index = 5
+No collision
+Inserted at index = 5
+
+Hash Table:
+0 : EMPTY
+1 : EMPTY
+2 : EMPTY
+3 : EMPTY
+4 : EMPTY
+5 : 105
+6 : EMPTY
+7 : EMPTY
+8 : EMPTY
+9 : EMPTY
+
+Inserting 210
+Initial hash index = 0
+No collision
+Inserted at index = 0
+
+Hash Table:
+0 : 210
+1 : EMPTY
+2 : EMPTY
+3 : EMPTY
+4 : EMPTY
+5 : 105
+6 : EMPTY
+7 : EMPTY
+8 : EMPTY
+9 : EMPTY
+
+Inserting 315
+Initial hash index = 5
+Collision occurred 1 time(s)
+Inserted at index = 6
+
+Hash Table:
+0 : 210
+1 : EMPTY
+2 : EMPTY
+3 : EMPTY
+4 : EMPTY
+5 : 105
+6 : 315
+7 : EMPTY
+8 : EMPTY
+9 : EMPTY
+
+Inserting 420
+Initial hash index = 0
+Collision occurred 1 time(s)
+Inserted at index = 1
+
+Hash Table:
+0 : 210
+1 : 420
+2 : EMPTY
+3 : EMPTY
+4 : EMPTY
+5 : 105
+6 : 315
+7 : EMPTY
+8 : EMPTY
+9 : EMPTY
+
+Inserting 525
+Initial hash index = 5
+Collision occurred 2 time(s)
+Inserted at index = 7
+
+Hash Table:
+0 : 210
+1 : 420
+2 : EMPTY
+3 : EMPTY
+4 : EMPTY
+5 : 105
+6 : 315
+7 : 525
+8 : EMPTY
+9 : EMPTY
+
+Inserting 630
+Initial hash index = 0
+Collision occurred 2 time(s)
+Inserted at index = 2
+
+Hash Table:
+0 : 210
+1 : 420
+2 : 630
+3 : EMPTY
+4 : EMPTY
+5 : 105
+6 : 315
+7 : 525
+8 : EMPTY
+9 : EMPTY
+
+Inserting 735
+Initial hash index = 5
+Collision occurred 3 time(s)
+Inserted at index = 8
+
+Hash Table:
+0 : 210
+1 : 420
+2 : 630
+3 : EMPTY
+4 : EMPTY
+5 : 105
+6 : 315
+7 : 525
+8 : 735
+9 : EMPTY
+
+Inserting 840
+Initial hash index = 0
+Collision occurred 3 time(s)
+Inserted at index = 3
+
+Hash Table:
+0 : 210
+1 : 420
+2 : 630
+3 : 840
+4 : EMPTY
+5 : 105
+6 : 315
+7 : 525
+8 : 735
+9 : EMPTY
+
+Total collision/probe steps = 12
+
+
+========== HASHING SEARCH ==========
+Search 105 -> Found at index 5, Comparisons = 1
+Search 210 -> Found at index 0, Comparisons = 1
+Search 315 -> Found at index 6, Comparisons = 2
+Search 420 -> Found at index 1, Comparisons = 2
+Search 525 -> Found at index 7, Comparisons = 3
+Search 630 -> Found at index 2, Comparisons = 3
+Search 735 -> Found at index 8, Comparisons = 4
+Search 840 -> Found at index 3, Comparisons = 4
+
+
+========== LINEAR SEARCH ==========
+Search 105 -> Found at position 0, Comparisons = 1
+Search 210 -> Found at position 1, Comparisons = 2
+Search 315 -> Found at position 2, Comparisons = 3
+Search 420 -> Found at position 3, Comparisons = 4
+Search 525 -> Found at position 4, Comparisons = 5
+Search 630 -> Found at position 5, Comparisons = 6
+Search 735 -> Found at position 6, Comparisons = 7
+Search 840 -> Found at position 7, Comparisons = 8
+
+
+========== COMPARISON ==========
+Song ID    Hashing              Linear Search       
+105        1                    1                   
+210        1                    2                   
+315        2                    3                   
+420        2                    4                   
+525        3                    5                   
+630        3                    6                   
+735        4                    7                   
+840        4                    8                   
+
+Average Hashing Comparisons = 2.50
+Average Linear Search Comparisons = 4.50
+
+
+========== LOAD FACTOR ==========
+Load Factor = n / m
+             = 8 / 10
+             = 0.80
+             = 80%
+
+
+========== COMPLEXITY ==========
+Hashing Search - Average Case : O(1) expected
+Hashing Search - Worst Case   : O(n)
+Linear Search - Best Case     : O(1)
+Linear Search - Average Case  : O(n)
+Linear Search - Worst Case    : O(n)
